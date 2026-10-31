@@ -1,32 +1,67 @@
+@use '../style.scss' as lm;
 .back {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100vw;
-  height: 100vh;
-  background-color: rgba(0, 0, 0, 0.5); /* Полупрозрачный темный фон */
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  z-index: 9999;
-}
-
-/* 2. КАРТОЧКА ОКНА: должна быть компактной, НЕ на весь экран */
+  @include lm.modal_style( 100vw,100vh);
 .very_big_container {
- width: 70vw;
- height: 80vh;
- border-radius: 2vh;
- background-color: white;
+ @include lm.very_big_container( 70vw,80vh);
  .big_container{
    display: flex;
    justify-content: space-between;
    align-items: center;
+   gap: 3vh;
    .left_container{
-    width: 40vw;
+    width: 54vw;
+    height: 70vh;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
+    .container{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: flex-start;
+      gap: 3vh;
+      p{
+        color: #2D3748;
+        font-size: 16px;
+        span{
+         color: #1A202C;
+        font-size: 30px;
+        }
+      }
+      .forma{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        gap: 2vh;
+        p{
+          font-size: 16px;
+          color: #222222;
+        }
+        input{
+          width: 400px;
+          height: 4vh;
+          border-top: none;
+          border-left: none;
+          border-right: none;
+        }
+        input::placeholder{
+          color: #B0AAD0;
+          
+        }
+      }
+      .knopki{
+        width: 20vw;
+        display: flex;
+        justify-content: space-around;
+      }
+    }
+    .foto{
+     width: 10vw;
+     height: 14vh;
+     justify-content: center;
+     align-items: center;
+    }
    }
    .right_container{
     img{
@@ -37,4 +72,5 @@
     }
    }
  }
+}
 }
