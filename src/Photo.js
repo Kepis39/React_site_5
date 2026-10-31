@@ -4,11 +4,13 @@ import entypo from '../src/assets/entypo.png'
 import Group from '../src/assets/Group.png'
 import Grouwd from '../src/assets/Grouwd.png'
 import Framqqw from '../src/assets/Framqqw.png'
+import google from '../src/assets/google.png'
 export const Photo = {
 WTwf:WTwf,
 ant:ant,
 entypo:entypo,
 Group:Group,
 Grouwd:Grouwd,
-Framqqw:Framqqw
+Framqqw:Framqqw,
+google:google
 }
