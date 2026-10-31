@@ -1,0 +1,40 @@
+.back {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.5); /* Полупрозрачный темный фон */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+}
+
+/* 2. КАРТОЧКА ОКНА: должна быть компактной, НЕ на весь экран */
+.very_big_container {
+ width: 70vw;
+ height: 80vh;
+ border-radius: 2vh;
+ background-color: white;
+ .big_container{
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   .left_container{
+    width: 40vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+   }
+   .right_container{
+    img{
+        width: 70vh;
+        height: 80vh;
+        border-top-right-radius: 2vh;
+        border-bottom-right-radius: 2vh;
+    }
+   }
+ }
+}

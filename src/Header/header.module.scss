@@ -1,0 +1,45 @@
+@use '../Components/style.scss' as lm;
+  header {
+  @extend %base-style;
+  height: 8vh;
+  nav {
+    @include lm.nav-style(80vw, 2vh);
+    img{
+      height: 3vh
+    }
+    ul{
+    @include lm.ul-style(50vw, 2vh);
+    list-style: none;
+    li{
+      a{
+        color: #000000;
+        text-decoration: none;
+         font-size: 16px;
+      }
+       .active{
+         color: #1DBF73;
+       }
+    }
+    }
+    .knopki{
+      width: 20vw;
+      display: flex;
+      justify-content: space-evenly;
+      align-items: center;
+      button{
+        width: 151px;
+        height: 40px;
+        font-size: 15px;
+        background-color: #F2F0FE;
+        border: none;
+        color: #1DBF73;
+        border-radius: 2vh;
+      }
+      button:hover{
+        color: #F2F0FE;
+        background-color: #1DBF73;
+      }
+    }
+  }
+}
+

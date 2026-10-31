@@ -1,0 +1,52 @@
+
+%base-style {
+    width: 99.2vw;
+    height: 8vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+%base-footer-style {
+    width: 99.2vw;
+    height: 50vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color:  #F2F0FE;
+}
+@mixin nav-style($width,$height){
+     width: 80vw;
+    height: 2vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+@mixin ul-style($width,$height){
+    width: 50vw;
+     display: flex;
+    justify-content: space-evenly;
+}
+@mixin big_container-style($width, $height){
+        width: 99.2vw;
+        height: 40vh;
+        display: flex;
+        justify-content:space-evenly;
+        align-items: center;
+        gap: 3vh;
+}
+@mixin right_container-style($width, $height){
+        width: 49.2vw;
+        height: 40vh;
+        display: flex;
+        justify-content:space-evenly;
+        align-items: flex-start;
+}
+@mixin right_container-style2($width, $height){
+        width: 49.2vw;
+        height: 10vh;
+        gap: 4vh;
+        display: flex;
+        flex-direction: column;
+        justify-content:center;
+        align-items: flex-end;
+}

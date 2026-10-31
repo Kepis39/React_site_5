@@ -1,0 +1,61 @@
+@use '../Components/style.scss' as lm;
+ footer{
+    height:40vh;
+    @extend %base-footer-style;
+    .big_container{
+        @include lm.big_container-style(99.2vw, 40vh);
+          .right_container1{
+            @include lm.right_container-style2(30.2vw, 50vh);
+             .right_container2{
+             @include lm.right_container-style(30.2vw, 20vh);
+              .kolonka{
+                    display: flex;
+                    flex-direction: column;
+                    gap: 16px;
+                    h2{
+                    font-size: 22px;
+                    color: #222222;
+                    font-weight: 800;
+                }
+                ul {
+                    list-style: none;
+                    display: flex;
+                    flex-direction: column;
+                li {
+                    font-size: 18px;
+                    color: #222222;
+                    line-height: 1.8;
+                    span {color: white;}
+                   }
+                }
+                }
+            }
+            .niz{
+                width: 22vw;
+                height: 20vh;
+                display: flex;
+                justify-content: end;
+                align-items: center;
+                p{
+                    font-size: 16px;
+                    color: #222222;
+                }
+            }
+        }
+        .left_container{
+            height: 31vh;
+            gap: 3vh;
+             display: flex;
+             flex-direction: column;
+             justify-content:start;
+             align-items: flex-start;
+            .foto{
+                width: 22vw;
+                display: flex;
+                justify-content: start;
+                gap: 3vh;
+                align-items: start;
+            }
+        }
+    }
+ }
